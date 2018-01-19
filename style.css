@@ -18,11 +18,6 @@ ul {
     padding: 0;
 }
 
-li .active {
-    background-color: #4CAF50;
-    color: white;
-}
-
 section {
  display: flex;
 }
@@ -33,4 +28,32 @@ aside {
 
 article {
  flex: 100
+}
+/*
+need to seperate them ol and ul are belong to li
+*/
+ol li{
+    display: block;
+}
+
+li {
+    display: inline;
+}
+
+li a {
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li .active {
+    background-color: #4CAF50;
+    color: white;
+}
+/*
+this for the mouse put on it the gray one
+*/
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
 }
