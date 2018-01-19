@@ -22,3 +22,15 @@ li .active {
     background-color: #4CAF50;
     color: white;
 }
+
+section {
+ display: flex;
+}
+
+aside {
+ flex: 1
+}
+
+article {
+ flex: 100
+}
